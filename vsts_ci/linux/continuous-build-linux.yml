@@ -6,4 +6,4 @@ steps:
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifact: drop'
     inputs:
-      PathtoPublish: '$(BUILD.REPOSITORY.LOCALPATH)\.env.tmp'
+      PathtoPublish: '$(BUILD.REPOSITORY.LOCALPATH)/.env.tmp'
