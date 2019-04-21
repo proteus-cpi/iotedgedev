@@ -27,3 +27,8 @@ steps:
       mvn -v
       sudo -E `which tox` -e "$(TOXENV)"
     displayName: "Run test"
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: drop'
+    inputs:
+      PathtoPublish: '$(BUILD.REPOSITORY.LOCALPATH)\.env.tmp'
