@@ -4,7 +4,7 @@ steps:
     displayName: "Update .env.tmp file"
 
   - powershell: |
-      npm i -g iothub-explorer yo generator-azure-iot-edge-module 2> $null
+      npm i -g iothub-explorer yo generator-azure-iot-edge-module --loglevel error
     displayName: "Install IoT Hub explorer, Yeoman and Azure IoT Edge Node.js module generator packages"
 
   - powershell: |
