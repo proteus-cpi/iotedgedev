@@ -1,5 +1,4 @@
 from .utility import Utility
-import json
 
 class ConnectionString:
     def __init__(self, value):

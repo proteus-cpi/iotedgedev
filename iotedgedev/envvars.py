@@ -99,8 +99,6 @@ class EnvVars:
             try:
                 try:
                     self.IOTHUB_CONNECTION_STRING = self.get_envvar("IOTHUB_CONNECTION_STRING")
-                    self.output.info("chaoyitest")
-                    self.output.info(self.IOTHUB_CONNECTION_STRING)
                     self.IOTHUB_CONNECTION_INFO = None
                     if self.IOTHUB_CONNECTION_STRING:
                         self.IOTHUB_CONNECTION_INFO = IoTHubConnectionString(self.IOTHUB_CONNECTION_STRING)
