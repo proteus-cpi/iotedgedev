@@ -17,7 +17,6 @@ class ConnectionString:
             if self.data:
                 self.iothub_host = IoTHubHost(self["hostname"])
                 self.shared_access_key = self["sharedaccesskey"]
-        print(json.dumps(self))
 
     def __getitem__(self, key):
         return self.data[key]
