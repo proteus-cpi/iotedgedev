@@ -11,6 +11,6 @@ cryptography
 cookiecutter
 PyYAML
 pylint
-pytest
+pytest==4.4.1
 setuptools
 twine
